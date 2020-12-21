@@ -1,7 +1,7 @@
 package networking.textbased;
 
 
-public class Main {
+public class MainT {
     public static void main(String... args) throws Exception {
         //lambda: Runnable
         new Thread( () -> {

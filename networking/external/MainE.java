@@ -4,7 +4,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-public class Main {
+public class MainE {
     public static void main(String... args) throws Exception {
           // lambda: Runnable
           new Thread(() -> {

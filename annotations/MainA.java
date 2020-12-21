@@ -2,9 +2,9 @@ package annotations;
 
 import java.lang.annotation.Annotation;
 
-public class Main {
+public class MainA {
     public static void main(String[] args) {
-        Main obj = new Main();
+        MainA obj = new MainA();
         obj.getCardFace();
         
     }
