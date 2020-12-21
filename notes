@@ -1,0 +1,52 @@
+
+Well-known interfaces
+@Override used on methods
+
+
+
+
+@SuppressWarnings("unchecked") used on statements
+List<Integer> myList = (List<Integer>) objectinputstream.readObject();  this gives a compiler warning that I am using List<Integer> in an object
+to get ride of it use @suppressWarnings("uncheked")
+
+
+
+
+
+VeryOldList Style Java
+List vol = new ArrayList();
+
+
+
+
+
+@Deprecated
+public String getText() {
+return "i am created in 1010 year";
+}
+
+
+@FunctionalInterface 
+interface MyFun {
+
+}
+
+
+
+
+custom annotations
+- Marker MyAnnot()
+- single element MyAnnot(name="something")
+- multiple elements MyAnnot(name = "", number=12345)
+public @interface MyAnnot {
+String Name();
+
+
+}
+
+
+
+
+
+
+

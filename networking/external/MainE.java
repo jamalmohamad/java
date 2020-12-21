@@ -5,7 +5,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class MainE {
-    public static void main(String... args) throws Exception {
+    public static void main(String... args) throws InterruptedException {
           // lambda: Runnable
           new Thread(() -> {
             Server.main(args);
