@@ -1,4 +1,4 @@
-package networking;
+package networking.textbased;
 
 
 public class Main {

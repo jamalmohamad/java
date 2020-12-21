@@ -1,4 +1,4 @@
-package networking;
+package networking.textbased;
 
 import java.io.*;
 import java.util.*;
