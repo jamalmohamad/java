@@ -8,9 +8,9 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class Client {
-    public static void main(String... args) throws UnknownHostException, IOException {
+    public static void main(String... args) {
         String HOST = "127.0.0.1";
-        int PORT = 2000;
+        int PORT = 10000;
 
         try (
             Socket socket = new Socket(HOST, PORT);
@@ -18,9 +18,18 @@ public class Client {
             ObjectInputStream objInputStr = new ObjectInputStream(socket.getInputStream());
             
         ){
-            objOutStr.writeObject("something simple");
+            objOutStr.writeObject(new MyData(123, "abc"));
             objOutStr.flush();
+
+            MyData answer = (MyData)objInputStr.readObject();
+            System.out.println("Client got: " + answer);
+
+
+           
             
+
+        } catch(Exception err){
+            err.printStackTrace();
 
         }
 
